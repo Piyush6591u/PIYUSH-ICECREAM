@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceπCream Parlor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #89CFF0;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #4B9CD3;
+            padding: 1rem;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: #E6F3FF;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.mashed.com/img/gallery/30-best-ice-cream-flavors-ranked-from-worst-to-best/l-intro-1654092923.jpg");
+            height: 60vh;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .flavors {
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .flavor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .flavor-card {
+            background-color: #E6F3FF;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .flavor-card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .contact {
+            background-color: #89CFF0;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #4B9CD3;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .btn {
+            background-color: #4B9CD3;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #1E90FF;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>IceπCream</h1>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#flavors">Flavors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div>
+            <h2>Welcome to IceπCream</h2>
+            <p>Indulge in our handcrafted ice cream delights</p>
+            <a href="#flavors" class="btn">View Our Flavors</a>
+        </div>
+    </section>
+
+    <section class="flavors" id="flavors">
+        <h2>Our Popular Flavors</h2>
+        <div class="flavor-grid">
+            <div class="flavor-card">
+                <img src="https://www.wikihow.com/images/e/e5/Make-Christmas-Ice-Cream-Log-Step-18-Version-2.jpg" alt="Vanilla">
+                <h3>Classic Vanilla</h3>
+                <p>Rich and creamy vanilla</p>
+                <p>₹99/scoop</p>
+            </div>
+            <div class="flavor-card">
+                <img src="https://i.etsystatic.com/50505595/r/il/4aeef8/5860051627/il_1080xN.5860051627_lxfb.jpg" alt="Chocolate">
+                <h3>Double Chocolate</h3>
+                <p>Intense dark chocolate experience</p>
+                <p>₹129/scoop</p>
+            </div>
+            <div class="flavor-card">
+                <img src="https://bing.com/th?id=OSK.f146d856e9a6dd97e91247dc948442ec" alt="Strawberry">
+                <h3>Fresh Strawberry</h3>
+                <p>Made with real strawberries</p>
+                <p>₹119/scoop</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Visit Us Today</h2>
+        <p>123 Ice Cream Street, muradnagar</p>
+        <p>Phone: 500-600-700</p>
+        <p>Open daily: 9 AM - 10 PM</p>
+        <a href="#" class="btn">Get Directions</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 IceπCream Parlor. All rights reserved.</p>
+    </footer>
+</body>
+</html>
